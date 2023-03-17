@@ -1,0 +1,10 @@
+---
+import { formatMusicPerv } from '../utils/helpers'
+import { getSanityImageURL, formatBlogPostDate } from '../utils/helpers.js'
+export interface Props {
+  music: any;
+}
+  
+const { music } = Astro.props;
+---
+<a href={`${music.slug.current}`}class="mega-menu-link" tabindex="0">{music.title}</a>

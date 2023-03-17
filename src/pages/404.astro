@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Med.astro'
+import MusicList from '../components/MusicList.astro'
+import Gmain from '../components/Gmain.astro'
+import { getAllRel } from '../lib/api.js';
+import GroupList from '../components/GroupList.astro';
+const seo = {
+  title: '404',
+  description: '',
+}
+
+export interface Props {
+  music: any;
+}
+
+---
+
+
+
+<Layout seo={seo}>
+    <center>
+        <div style="margin-top: 300px;" class="_404-not-found">404</div>
+    </center>
+</Layout>
+
+
+<style>
+
+</style>

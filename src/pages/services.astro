@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Med.astro'
+import MusicList from '../components/MusicList.astro'
+import Gmain from '../components/Gmain.astro'
+import { getAllRel } from '../lib/api.js';
+import GroupList from '../components/GroupList.astro';
+const seo = {
+  title: 'Главная страница',
+  description: '',
+}
+
+export interface Props {
+  music: any;
+}
+
+
+
+const getAllRels = await getAllRel();
+---
+
+
+
+<Layout seo={seo}>
+    <section data-w-id="72357fd5-bc7a-79cd-c7c6-bf38322bca11" class="section services wf-section">
+        <div class="container-default w-container">
+            <div data-w-id="72357fd5-bc7a-79cd-c7c6-bf38322bca13" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="content-top services">
+                <div class="split-content services-left">
+                    <h1>Our Services</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit velit, sapien habitant integer senectus malesuada ac.</p>
+                </div>
+                <div class="split-content services-right"><a href="/plans" class="button-primary w-button">Book an Appointment</a></div><img src="https://assets.website-files.com/601d7e7320ecf079f58169fd/6022b3d4431e40819c902652_shape-2-services-dentist-template.svg" data-w-id="72357fd5-bc7a-79cd-c7c6-bf38322bca1c"
+                    alt="" class="shape services-1" style="will-change: transform; transform: translate3d(0px, -16px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+            <div class="services-wrapper">
+                <div class="w-dyn-list">
+                    <div data-w-id="72357fd5-bc7a-79cd-c7c6-bf38322bca1f" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" role="list" class="services-grid w-dyn-items">
+                        <div role="listitem" class="card-service-item w-dyn-item">
+                            <a href="/service/cosmetic-dentistry" class="card service w-inline-block">
+                                <div class="image-wrapper card-service"><img src="https://assets.website-files.com/601d7e7320ecf0fa9e816a33/60bb873f67aecc71736f3b22_cosmetic-dentistry-dentist-webflow-template.svg" alt="Cosmetic Dentistry" class="image card-service" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                <div class="card-service-content">
+                                    <h2 class="title card-service heading-size-h3" style="color: rgb(24, 20, 67);">Cosmetic Dentistry</h2>
+                                    <p class="paragraph card-service">Lorem ipsum dolor sit amet, diument consectetur adipiscing elit. </p>
+                                    <div class="link-underline-wrapper">
+                                        <div>Learn More</div>
+                                        <div class="underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" class="card-service-item w-dyn-item">
+                            <a href="/service/orthodontics" class="card service w-inline-block">
+                                <div class="image-wrapper card-service"><img src="https://assets.website-files.com/601d7e7320ecf0fa9e816a33/60bb87466544e0596f5c10f1_orthodontics-dentist-webflow-template.svg" alt="Orthodontics" class="image card-service" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                <div class="card-service-content">
+                                    <h2 class="title card-service heading-size-h3" style="color: rgb(24, 20, 67);">Orthodontics</h2>
+                                    <p class="paragraph card-service">Lorem ipsum dolor sit amet, diument consectetur adipiscing elit. </p>
+                                    <div class="link-underline-wrapper">
+                                        <div>Learn More</div>
+                                        <div class="underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" class="card-service-item w-dyn-item">
+                            <a href="/service/oral-hygiene" class="card service w-inline-block">
+                                <div class="image-wrapper card-service"><img src="https://assets.website-files.com/601d7e7320ecf0fa9e816a33/60bb874c82759a7762ec0820_oral-hygiene-dentist-webflow-template.svg" alt="Oral Hygiene" class="image card-service" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                <div class="card-service-content">
+                                    <h2 class="title card-service heading-size-h3" style="color: rgb(24, 20, 67);">Oral Hygiene</h2>
+                                    <p class="paragraph card-service">Lorem ipsum dolor sit amet, diument consectetur adipiscing elit. </p>
+                                    <div class="link-underline-wrapper">
+                                        <div>Learn More</div>
+                                        <div class="underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" class="card-service-item w-dyn-item">
+                            <a href="/service/dental-treatment" class="card service w-inline-block">
+                                <div class="image-wrapper card-service"><img src="https://assets.website-files.com/601d7e7320ecf0fa9e816a33/60bb8752f6078b572c75fbf9_dental-treatment-dentist-webflow-template.svg" alt="Dental Treatment" class="image card-service" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                <div class="card-service-content">
+                                    <h2 class="title card-service heading-size-h3" style="color: rgb(24, 20, 67);">Dental Treatment</h2>
+                                    <p class="paragraph card-service">Lorem ipsum dolor sit amet, diument consectetur adipiscing elit. </p>
+                                    <div class="link-underline-wrapper">
+                                        <div>Learn More</div>
+                                        <div class="underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" class="card-service-item w-dyn-item">
+                            <a href="/service/dental-surgery" class="card service w-inline-block">
+                                <div class="image-wrapper card-service"><img src="https://assets.website-files.com/601d7e7320ecf0fa9e816a33/60bb87590c28d3760172637f_dental-surgery-dentist-webflow-template.svg" alt="Dental Surgery" class="image card-service" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                <div class="card-service-content">
+                                    <h2 class="title card-service heading-size-h3" style="color: rgb(24, 20, 67);">Dental Surgery</h2>
+                                    <p class="paragraph card-service">Lorem ipsum dolor sit amet, diument consectetur adipiscing elit. </p>
+                                    <div class="link-underline-wrapper">
+                                        <div>Learn More</div>
+                                        <div class="underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" class="card-service-item w-dyn-item">
+                            <a href="/service/dental-implants" class="card service w-inline-block">
+                                <div class="image-wrapper card-service"><img src="https://assets.website-files.com/601d7e7320ecf0fa9e816a33/60bb876299013621b3a156cd_dental-implants-dentist-webflow-template.svg" alt="Dental Implants" class="image card-service" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                <div class="card-service-content">
+                                    <h2 class="title card-service heading-size-h3" style="color: rgb(24, 20, 67);">Dental Implants</h2>
+                                    <p class="paragraph card-service">Lorem ipsum dolor sit amet, diument consectetur adipiscing elit. </p>
+                                    <div class="link-underline-wrapper">
+                                        <div>Learn More</div>
+                                        <div class="underline" style="transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div><img src="https://assets.website-files.com/601d7e7320ecf079f58169fd/6022b3d535d4e29e42b37891_shape-1-services-dentist-template.svg" data-w-id="72357fd5-bc7a-79cd-c7c6-bf38322bca2e" alt="" class="shape services-2" style="will-change: transform; transform: translate3d(0px, 65px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+        </div>
+    </section>
+</Layout>
+
+
+<style>
+
+</style>

@@ -1,0 +1,9 @@
+---
+import { getAllRel } from '../lib/api.js';
+import Gmainshow from "./Gmainshow.astro";
+const getAllRels = await getAllRel();
+---
+  {getAllRels.map((music) =>
+    <Gmainshow music={music} />)}
+
+

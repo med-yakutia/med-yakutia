@@ -1,0 +1,19 @@
+---
+import { formatMusicPerv } from '../utils/helpers'
+import { getSanityImageURL, formatBlogPostDate } from '../utils/helpers.js'
+export interface Props {
+  music: any;
+}
+  
+const { music } = Astro.props;
+---
+
+<div id="w-node-a7073a08-a4e8-7ad0-d8be-ae8643566f90-6f87153a" class="module integrations w-inline-block">
+    <div class="flex align-center mg-bottom-16px">
+       <div><img loading="eager" src="./img/main.svg" class="mg-right-12px"></div>
+       <div class="heading-h5-size" style="color: rgb(20, 118, 255);">{music.title}</div>
+    </div>
+    <a style="text-decoration-line: none;" href={`${music.slug.current}`}>
+    <div class="btn-secondary small">Перейти <i class="bx bx-chevron-right"></i></div>
+    </a>
+ </div>

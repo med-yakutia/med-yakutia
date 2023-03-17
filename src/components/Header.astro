@@ -1,0 +1,67 @@
+---
+import { getAllRel } from '../lib/api.js';
+import GroupList from './GroupList.astro';
+
+const getAllRels = await getAllRel();
+---
+
+<div data-collapse="medium" data-animation="over-right" data-duration="500" data-easing="ease-out-quad" data-easing2="ease-out-quad" data-w-id="58db7844-5919-d71b-dd74-2323ed8dffe9" role="banner" class="header w-nav">
+    <div class="container-default w-container">
+        <div class="header-wrapper">
+            <div class="split-content header-right">
+                <a href="/" class="brand w-nav-brand"><img src="./images/logo.svg" alt="Dentalic Webflow Template - Logo" class="header-logo"></a>
+            </div>
+            <div class="split-content header-left">
+                <nav role="navigation" class="nav-menu w-nav-menu">
+                    <ul role="list" class="header-navigation">
+                        <li class="nav-item-wrapper"><a href="/" class="nav-link">Главная</a></li>
+                        <li class="nav-item-wrapper">
+                            <div data-hover="true" data-delay="0" data-w-id="9487e9f9-f77f-1cfb-8968-83885b560b2b" class="header-dropdown w-dropdown" style="max-width: 1268px;">
+                                <div class="header-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-0" aria-controls="w-dropdown-list-0" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+                                    <div>Оборудование&nbsp; <span class="dropdown-arrow" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><i class='bx bxs-chevron-down' style="font-size: 12px;"></i></span></div>
+                                </div>
+                                <nav class="dropdown-list w-dropdown-list" style="display: none; transform: translate3d(0px, 0px, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0; width: 580.031px; height: 0px;"
+                                    id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0">
+                                    <div class="menu-grid-wrapper">
+                                        <div class="w-layout-grid menu-grid">
+                                            <div class="mega-menu">
+                                                <h2 class="mega-menu-title">Каталог</h2>
+                                                <div class="mega-menu-columns">
+                                                    
+                                                    <div class="mega-menu-column-1">
+                                                        <GroupList music={getAllRels}/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mega-menu last">
+                                                <h2 class="mega-menu-title">Информация</h2>
+                                                <div class="mega-menu-column-2"><a href="/services-list" class="mega-menu-link special" style="white-space: nowrap;"
+                                                        tabindex="0">Перечень оборудования</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                        <li class="nav-item-wrapper"><a href="/#Commoda" class="nav-link">Преимущества</a></li>
+                        <li class="nav-item-wrapper"><a href="/#Contact" class="nav-link">Контакты</a></li>
+                        <li class="nav-item-wrapper header-buttons-mobile">
+                            <div class="_2-buttons header-buttons-mobile">
+                                <a href="tel:+7 (924) 160-00-11" class="button-secondary header-button-mobile w-button"><img src="/images/icons/h-phone.svg">  +7 (924) 160-00-11</a><a href="https://wa.me/+79241600011" class="button-primary header-button-mobile w-button">Написать в WhatsApp</a></div>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:+7 (924) 160-00-11" class="button-secondary header-button w-button"><img src="/images/icons/h-phone.svg">  +7 (924) 160-00-11</a><a href="https://wa.me/+79241600011" class="button-primary header-button w-button">Написать в WhatsApp</a>
+                <div class="menu-button w-nav-button">
+                    <div class="menu-button-icon-wrapper">
+                        <div class="menu-button-icon">
+                            <div class="menu-line-top"></div>
+                            <div class="menu-line-middle"></div>
+                            <div class="menu-line-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

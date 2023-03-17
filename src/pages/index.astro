@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Med.astro';
+import Mainpage from '../components/Mainpage.astro';
+import MusicList from '../components/MusicList.astro';
+import Gmain from '../components/Gmain.astro'
+import { getAllRel } from '../lib/api.js';
+import GroupList from '../components/GroupList.astro';
+const seo = {
+  title: 'Главная страница',
+  description: '',
+}
+
+export interface Props {
+  music: any;
+}
+
+
+
+const getAllRels = await getAllRel();
+---
+
+
+
+<Layout seo={seo}>
+    <Mainpage />
+</Layout>
+
+
+<style>
+
+</style>

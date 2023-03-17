@@ -1,0 +1,61 @@
+---
+import {settings} from "../data/settings";
+import '../styles/base.css';
+import '../styles/main.css';
+// import '../styles/tailwind.css';
+
+export interface Props {
+	title?: string;
+	description?: string;
+	canonicalURL?: URL | string;
+	image?: string;
+}
+
+const title = Astro.props.title || settings.title;
+const description = Astro.props.description || settings.description;
+const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
+const image = new URL(Astro.props.image || 'https://i.postimg.cc/x8gCkdjT/image.png', Astro.site);
+---
+
+<meta charset="utf-8" />
+
+
+<meta property="og:type" content="website">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="images/ico.ico" />
+<link rel="icon" type="image/svg" href="images/ico.svg" />
+<!-- Primary Meta Tags -->
+<title> Мед Якутия | {title || settings.title}</title>
+<meta name="title" content={title || settings.title} />
+
+<meta name="keywords" content="">
+
+<meta name="generator" content={Astro.generator} />
+<!-- settingsmap -->
+<link rel="sitemap" href="/sitemap.xml">
+<!-- robots -->
+<meta name="robots" content="index, follow">
+<!-- RSS -->
+<!-- <link rel="alternate" type="application/rss+xml" title={`${settings.name} Blog`} href={`${settings.url}/feed/blog.xml`}/> -->
+<!-- Canonical -->
+<link rel="canonical" href={canonicalURL}>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="Мед Якутия | Своевременная поставка медоборудования по всей Якутии!">
+<meta name="description" content="Мы поставляем медицинское оборудование для оснащения медицинских учреждений, больниц и поликлиник.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://med-yakutia.ru">
+<meta property="og:title" content="Мед Якутия | Своевременная поставка медоборудования по всей Якутии!">
+<meta property="og:description" content="Мы поставляем медицинское оборудование для оснащения медицинских учреждений, больниц и поликлиник.">
+<meta property="og:image" content="https://i.postimg.cc/Kj5VVGtB/Frame-15.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://med-yakutia.ru">
+<meta property="twitter:title" content="Мед Якутия | Своевременная поставка медоборудования по всей Якутии!">
+<meta property="twitter:description" content="Мы поставляем медицинское оборудование для оснащения медицинских учреждений, больниц и поликлиник.">
+<meta property="twitter:image" content="https://i.postimg.cc/Kj5VVGtB/Frame-15.png">
