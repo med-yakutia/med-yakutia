@@ -1,6 +1,5 @@
 ---
 import { getAllRel } from '../lib/api.js';
-import { getSanityImageURL, formatBlogPostDate, formatMusicPerv } from '../utils/helpers.js'
 
 export interface Props {
   music: any;
@@ -13,6 +12,11 @@ const { title, } = music;
 
 const getAllRels = await getAllRel();
 ---
+
+<h1>{music.title}</h1>
+<p>{music.dis}</p>                    <h1>{music.title}</h1>
+<p>{music.dis}</p>
+
 <section data-w-id="Section" class="section home-hero wf-section">
     <div class="container-default home-hero w-container">
         <div class="home-hero-wrapper">
@@ -81,52 +85,55 @@ const getAllRels = await getAllRel();
         <div data-delay="4000" data-animation="slide" class="home-services-slider w-slider" data-autoplay="false" data-easing="ease" style="-webkit-transform:translate3d(null, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
             data-hide-arrows="false" data-disable-swipe="false" data-w-id="4aed9067-4b0e-7cfb-8002-af9678613dc4" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
             <div class="home-services-slider-mask w-slider-mask">
-                {music.manuscript && music.manuscript.asset ? (
-                    <div class="home-service-slide w-slide">
-                      <div class="w-dyn-list">
+                {music.tracklist.map((track) => {
+                    if (track.manuscript && track.manuscript.asset) {
+                      return (
+                      <div class="home-service-slide w-slide">
+                    <div class="w-dyn-list">
                         <div role="list" class="w-dyn-items">
-                          <div role="listitem" class="slider-card-service-item w-dyn-item">
-                            
-                            <a href={`${music.slug.current}`} class="card slider-service w-inline-block">
-                              <div class="image-wrapper slider-card-service">
-                                <img src={getSanityImageURL(music.imagemain).url()} alt="Cosmetic Dentistry" class="image slider-card-service">
-                              </div>
-                              <div class="slider-card-service-content">
-                                <h3 class="title slider-card-service">{music.title}</h3>
-                                <p class="paragraph slider-card-service">{music.dis}</p>
-                                <div class="link-underline-wrapper">
-                                  <div>Перейти к оборудованиям</div>
-                                  <div class="underline"></div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
+                            <div role="listitem" class="slider-card-service-item w-dyn-item">
+                                <a href="services-list" class="card slider-service w-inline-block">
+                                    <div class="image-wrapper slider-card-service"><img src="/images/group/1.jpg" alt="Cosmetic Dentistry" class="image slider-card-service"></div>
+                                    <div class="slider-card-service-content">
+                                        <h3 class="title slider-card-service">Медицинское диагностическое оборудование </h3>
+                                        <p class="paragraph slider-card-service">То, без чего сегодня невозможно представить современную медицину. Эта категория включает в себя компьютерные и магнитные томографы, рентгенологические сканеры, аппараты для ультразвукового исследования,
+                                            маммографы и другие виды аппаратуры. </p>
+                                        <div class="link-underline-wrapper">
+                                            <div>Перейти к оборудованиям</div>
+                                            <div class="underline"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  ) : (
-                    <div class="home-service-slide w-slide">
-                      <div class="w-dyn-list">
+                </div>
+                      );
+                            } else {
+                              return (
+                              <div class="home-service-slide w-slide">
+                    <div class="w-dyn-list">
                         <div role="list" class="w-dyn-items">
-                          <div role="listitem" class="slider-card-service-item w-dyn-item">
-                            <a href={`${music.slug.current}`} class="card slider-service w-inline-block">
-                              <div class="image-wrapper slider-card-service">
-                                <img src={getSanityImageURL(music.imagemain).url()} alt="Cosmetic Dentistry" class="image slider-card-service">
-                              </div>
-                              <div class="slider-card-service-content">
-                                <h3 class="title slider-card-service">{music.title}</h3>
-                                <p class="paragraph slider-card-service">{music.dis}</p>
-                                <div class="link-underline-wrapper">
-                                  <div>Перейти к оборудованиям</div>
-                                  <div class="underline"></div>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
+                            <div role="listitem" class="slider-card-service-item w-dyn-item">
+                                <a href="services-list" class="card slider-service w-inline-block">
+                                    <div class="image-wrapper slider-card-service"><img src="/images/group/1.jpg" alt="Cosmetic Dentistry" class="image slider-card-service"></div>
+                                    <div class="slider-card-service-content">
+                                        <h3 class="title slider-card-service">Медицинское диагностическое оборудование </h3>
+                                        <p class="paragraph slider-card-service">То, без чего сегодня невозможно представить современную медицину. Эта категория включает в себя компьютерные и магнитные томографы, рентгенологические сканеры, аппараты для ультразвукового исследования,
+                                            маммографы и другие виды аппаратуры. </p>
+                                        <div class="link-underline-wrapper">
+                                            <div>Перейти к оборудованиям</div>
+                                            <div class="underline"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  )}
+                </div>
+                              );
+                            }
+                          })}
 
 
 

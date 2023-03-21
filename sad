@@ -1,0 +1,100 @@
+                <div class="home-service-slide w-slide">
+                    <div class="w-dyn-list">
+                        <div role="list" class="w-dyn-items">
+                            <div role="listitem" class="slider-card-service-item w-dyn-item">
+                                <a href="services-list" class="card slider-service w-inline-block">
+                                    <div class="image-wrapper slider-card-service"><img src="/images/group/1.jpg" alt="Cosmetic Dentistry" class="image slider-card-service"></div>
+                                    <div class="slider-card-service-content">
+                                        <h3 class="title slider-card-service">Медицинское диагностическое оборудование </h3>
+                                        <p class="paragraph slider-card-service">То, без чего сегодня невозможно представить современную медицину. Эта категория включает в себя компьютерные и магнитные томографы, рентгенологические сканеры, аппараты для ультразвукового исследования,
+                                            маммографы и другие виды аппаратуры. </p>
+                                        <div class="link-underline-wrapper">
+                                            <div>Перейти к оборудованиям</div>
+                                            <div class="underline"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-slide w-slide">
+                    <div class="w-dyn-list">
+                        <div role="list" class="w-dyn-items">
+                            <div role="listitem" class="slider-card-service-item w-dyn-item">
+                                <a href="services-list" class="card slider-service w-inline-block">
+                                    <div class="image-wrapper slider-card-service"><img src="/images/group/2.jpg" alt="Orthodontics" class="image slider-card-service"></div>
+                                    <div class="slider-card-service-content">
+                                        <h3 class="title slider-card-service">Реанимационное, анестезиологическое и хирургическое оборудование </h3>
+                                        <p class="paragraph slider-card-service">Комплекс аппаратур, который позволяет проводить высокотехнологичные операции, применять эффективное и безопасное обезболивание, проводить экстренные реанимационные меры по спасению жизни и здоровья пациентов.
+                                        </p>
+                                        <div class="link-underline-wrapper">
+                                            <div>Перейти к оборудованиям</div>
+                                            <div class="underline"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-slide w-slide">
+                    <div class="w-dyn-list">
+                        <div role="list" class="w-dyn-items">
+                            <div role="listitem" class="slider-card-service-item w-dyn-item">
+                                <a href="services-list" class="card slider-service w-inline-block">
+                                    <div class="image-wrapper slider-card-service"><img src="/images/group/3.jpg" alt="Oral Hygiene" class="image slider-card-service"></div>
+                                    <div class="slider-card-service-content">
+                                        <h3 class="title slider-card-service">Лабораторное медицинское оборудование </h3>
+                                        <p class="paragraph slider-card-service">Комплекс технических устройств, в который входят различные приборы, аппараты и приспособления, дающие возможность осуществлять лабораторные исследования для различных медицинских целей.
+                                        </p>
+                                        <div class="link-underline-wrapper">
+                                            <div>Перейти к оборудованиям</div>
+                                            <div class="underline"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-slide w-slide">
+                    <div class="w-dyn-list">
+                        <div role="list" class="w-dyn-items">
+                            <div role="listitem" class="slider-card-service-item w-dyn-item">
+                                <a href="services-list" class="card slider-service w-inline-block">
+                                    <div class="image-wrapper slider-card-service"><img src="/images/group/4.jpg" alt="Dental Treatment" class="image slider-card-service"></div>
+                                    <div class="slider-card-service-content">
+                                        <h3 class="title slider-card-service">Медицинские эндоскопы </h3>
+                                        <p class="paragraph slider-card-service">Диагностическое и терапевтическое оборудование с широкой сферой применения. Основное назначение – проведение диагностических обследований органов ЖКТ и терапевтического лечения под видеонаблюдением или контролем
+                                            УЗИ </p>
+                                        <div class="link-underline-wrapper">
+                                            <div>Перейти к оборудованиям</div>
+                                            <div class="underline"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-service-slide w-slide">
+                    <div class="w-dyn-list">
+                        <div role="list" class="w-dyn-items">
+                            <div role="listitem" class="slider-card-service-item w-dyn-item">
+                                <a href="services-list" class="card slider-service w-inline-block">
+                                    <div class="image-wrapper slider-card-service"><img src="/images/group/5.jpg" alt="Dental Surgery" class="image slider-card-service"></div>
+                                    <div class="slider-card-service-content">
+                                        <h3 class="title slider-card-service">Средства реабилитации инвалидов</h3>
+                                        <p class="paragraph slider-card-service">К средствам реабилитации инвалидов относятся устройства, содержащие технические решения, в том числе специальные, используемые для компенсации или устранения стойких ограничений жизнедеятельности инвалида.
+                                        </p>
+                                        <div class="link-underline-wrapper">
+                                            <div>Перейти к оборудованиям</div>
+                                            <div class="underline"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
